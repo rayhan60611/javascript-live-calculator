@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  box-sizing: border-box;
+  border: 1px solid #dadadadc;
+  flex-direction: row;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 20px 20px 140px rgba(255, 255, 255, 0.3),
+    -20px -20px 140px #ffffff;
+  width: 450px;
+  height: 380px;
+  flex-wrap: wrap;
+}
+
+.displayDiv {
+  box-sizing: border-box;
+  display: flex;
+  width: 450px;
+  height: 100px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.displayTextbox {
+  height: 90px;
+  border-style: none;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin: 5px 5px;
+  outline: none;
+
+  box-shadow: rgb(204, 219, 232) 5px 5px 15px 0px inset,
+    rgba(204, 219, 232, 0.1) -5px -5px 15px 0px inset,
+    rgb(204, 219, 232) 5px -5px 15px 0px inset,
+    rgba(204, 219, 232, 0.7) -5px 5px 15px 0px inset;
+  color: #000000;
+  font-size: 2rem;
+  text-align: right;
+}
+
+.calculatorBodyDiv {
+  display: flex;
+  margin: 10px 5px;
+  height: 68%;
+}
+
+.calculatorBodyDiv button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bolder;
+  flex: 1;
+  border: 1px solid #818181;
+  cursor: pointer;
+
+  box-shadow: rgba(163, 163, 163, 0.993) 0px -23px 25px 0px inset,
+    rgba(255, 255, 255, 0.562) 0px -36px 30px 0px inset,
+    rgba(255, 255, 255, 0.836) 0px -79px 40px 0px inset;
+}
+
+.calculatorBodyDiv button:hover {
+  box-shadow: rgba(163, 163, 163, 0.993) 0px -0 0px 0px,
+    rgba(255, 255, 255, 0.562) 0px -0 0px 0px,
+    rgba(255, 255, 255, 0.836) 0px -0 0px 0px;
+}
+
+.calculatorBodyDiv button:active {
+  color: #a8eb12;
+  background-color: rgba(45, 45, 45, 0.5);
+  box-shadow: rgba(20, 206, 212, 0.993) 0px -0 0px 0px,
+    rgba(23, 171, 240, 0.562) 0px -0 0px 0px,
+    rgba(14, 117, 148, 0.836) 0px -0 0px 0px;
+}
+
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 6;
+  height: 100%;
+}
+
+.left button {
+  flex-basis: calc(100% / 3);
+
+  height: calc(100% / 5);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.right button {
+  padding: 0px 25px;
+}
+
+
+.resultPtag{
+    position: absolute;
+    bottom: -5px;
+    left: 12px;
+    font-family: -webkit-pictograph;
+    font-weight: bolder;
+    font-size: medium;
+    
+
+}
+
+.marqureeTag{
+  position: absolute;
+  z-index: -1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color:  #fff;
+ text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
+ top: 50px;
+}
